@@ -1,1 +1,7 @@
-# my-Christmas-tree
+# 🎄 Interactive 3D Christmas Tree
+
+### ❓怎么使用
+* **即可直接浏览器打开**
+
+### ❗主要注意
+* **如果出现点不开，可能是网络问题，因为资源在国外需🪜**
