@@ -156,9 +156,9 @@
     <script type="importmap">
         {
             "imports": {
-                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
-                "@mediapipe/tasks-vision": "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/+esm"
+                "three": "https://testingcf.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://testingcf.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+                "@mediapipe/tasks-vision": "https://testingcf.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/+esm"
             }
         }
     </script>
@@ -398,10 +398,10 @@
         }
 
         function preloadMediaPipe() {
-            try { FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/wasm").then(v => visionModel = v); } catch (e) {}
+            try { FilesetResolver.forVisionTasks("https://testingcf.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/wasm").then(v => visionModel = v); } catch (e) {}
         }
         async function createLandmarker() {
-            if (!visionModel) visionModel = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/wasm");
+            if (!visionModel) visionModel = await FilesetResolver.forVisionTasks("https://testingcf.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/wasm");
             handLandmarker = await HandLandmarker.createFromOptions(visionModel, {
                 baseOptions: { modelAssetPath: `https://gh-proxy.org/https://github.com/chenxinghan01/my-Christmas-tree/blob/main/hand_landmarker.task`, delegate: "GPU" },
                 runningMode: "VIDEO", numHands: 1
@@ -647,3 +647,4 @@
 </body>
 
 </html>
+
