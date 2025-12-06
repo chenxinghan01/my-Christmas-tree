@@ -447,7 +447,7 @@
             handLandmarker = await HandLandmarker.createFromOptions(visionModel, {
                 baseOptions: { 
                     // 使用 Google 官方源，确保国外访问稳定
-                    modelAssetPath: `https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task`, 
+                    modelAssetPath: `https://hk.gh-proxy.org/https://github.com/chenxinghan01/my-Christmas-tree/blob/main/hand_landmarker.task`, 
                     delegate: "GPU" 
                 },
                 runningMode: "VIDEO", numHands: 1
@@ -705,4 +705,5 @@
         init();
     </script>
 </body>
+
 </html>
